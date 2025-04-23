@@ -16,7 +16,6 @@ function App() {
       setTodos([...todos, newTask]);
     }
   };
-  console.log(todos);
 
   const removeTask = (id) => {
     setTodos([...todos.filter((todo) => todo.id !== id)]);

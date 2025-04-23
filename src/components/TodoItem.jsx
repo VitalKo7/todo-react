@@ -3,11 +3,10 @@ import { RiCloseCircleLine } from 'react-icons/ri';
 
 const TodoItem = ({ todo, removeTask, toggleTask }) => {
   return (
-    <div
-      onClick={() => toggleTask(todo.id)}
-      className={todo.completed ? 'todo-raw complete' : 'todo-raw'}
-    >
-      {todo.task}
+    <div className={todo.completed ? 'todo-row complete' : 'todo-row'}>
+      <div className="todo-row-main" onClick={() => toggleTask(todo.id)}>
+        {todo.task}
+      </div>
       <div className="iconsContainer">
         <RiCloseCircleLine onClick={() => removeTask(todo.id)} />
       </div>

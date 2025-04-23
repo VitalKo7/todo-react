@@ -42,10 +42,6 @@ h1 {
   font-size: 33px;
 }
 
-.complete {
-  text-decoration: line-through;
-}
-
 .todo-form {
   margin-bottom: 32px;
 }
@@ -93,6 +89,10 @@ h1 {
   padding: 16px;
   border-radius: 5px;
   width: 90%;
+}
+
+.complete {
+  text-decoration: line-through;
 }
 
 .iconsContainer {
